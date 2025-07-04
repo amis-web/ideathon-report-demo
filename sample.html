@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新名物アイデアソンin舘山寺</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .fade-in {
+        animation: fadeIn 0.5s ease-in;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+      .mobile-nav-hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <h1 class="text-xl font-bold text-gray-900">新名物アイデアソンin舘山寺</h1>
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-gray-200" id="nav-menu">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap justify-center gap-2 py-3" id="nav-links">
+          <a
+            href="#overview"
+            class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 rounded-md transition-colors"
+            >イベント概要</a
+          >
+          <a
+            href="#participants"
+            class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 rounded-md transition-colors"
+            >参加者</a
+          >
+          <a
+            href="#judges"
+            class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 rounded-md transition-colors"
+            >審査員</a
+          >
+          <a
+            href="#gallery"
+            class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 rounded-md transition-colors"
+            >ギャラリー</a
+          >
+          <a
+            href="#media"
+            class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 rounded-md transition-colors"
+            >メディア掲載</a
+          >
+          <a
+            href="#comments"
+            class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 rounded-md transition-colors"
+            >参加者の声</a
+          >
+          <a
+            href="#news"
+            class="px-4 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 rounded-md transition-colors"
+            >商品化決定</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+      <!-- Hero Section -->
+      <section id="hero" class="hero-bg rounded-2xl text-white p-8 md:p-12 fade-in">
+        <div class="text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">新名物アイデアソン in 舘山寺</h2>
+          <p class="text-lg md:text-xl opacity-90 mb-6">
+            学生と地域がつながる、舘山寺の新たな魅力を発掘する共創イベント
+          </p>
+          <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4 inline-block">
+            <p class="text-sm md:text-base">
+              🎉 「かんざんじ五色牛乳」など受賞アイデアはこちらで公開中！
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- イベント概要 -->
+      <section id="overview" class="content-section fade-in">
+        <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">イベント概要</h3>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+              <div class="border-l-4 border-blue-500 pl-4">
+                <h4 class="font-semibold text-gray-900 mb-2">開催日時</h4>
+                <p class="text-gray-600">2025年1月25日（土）10:00〜17:30</p>
+              </div>
+
+              <div class="border-l-4 border-green-500 pl-4">
+                <h4 class="font-semibold text-gray-900 mb-2">開催場所</h4>
+                <p class="text-gray-600">ウェルシーズン浜名湖 2階宴会場</p>
+              </div>
+
+              <div class="border-l-4 border-purple-500 pl-4">
+                <h4 class="font-semibold text-gray-900 mb-2">参加対象</h4>
+                <p class="text-gray-600">高校生・大学生・地域住民・企業関係者</p>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="border-l-4 border-orange-500 pl-4">
+                <h4 class="font-semibold text-gray-900 mb-2">主催</h4>
+                <p class="text-gray-600">静岡大学情報学部 舘山寺の魅力再発見プロジェクト</p>
+              </div>
+
+              <div class="border-l-4 border-red-500 pl-4">
+                <h4 class="font-semibold text-gray-900 mb-2">テーマ</h4>
+                <p class="text-gray-600">自由な発想で地域資源を活かした斬新な新名物案を創出する</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 p-6 bg-gray-50 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-3">イベント内容</h4>
+            <p class="text-gray-700 leading-relaxed">
+              浜名湖・舘山寺エリアは浜松市の代表的な観光地である一方、地域資源を活かした名物の企画・開発が少ないという課題があると考えた。<br />
+              その課題を解決するため、静岡大学の学生が中心となって本アイデアソンを企画。<br />
+              学生、地域住民、企業関係者が一堂に会し、舘山寺の未来につながる「新名物」を発掘・創出することを目的とした。<br />
+              地域の魅力や資源を再発見し、新たな地域ブランドの創出に挑戦した。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 参加者 -->
+      <section id="participants" class="content-section section-hidden">
+        <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">参加チーム一覧</h3>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+              <h4 class="font-semibold text-blue-600">A班</h4>
+              <p class="text-sm text-gray-500 mt-1">静岡文化芸術大学、浜松学芸高校</p>
+            </div>
+
+            <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+              <h4 class="font-semibold text-blue-600">B班</h4>
+              <p class="text-sm text-gray-500 mt-1">浜松聖星高校、浜松商業高校</p>
+            </div>
+
+            <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+              <h4 class="font-semibold text-blue-600">C班</h4>
+              <p class="text-sm text-gray-500 mt-1">静岡大学情報学部</p>
+            </div>
+
+            <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+              <h4 class="font-semibold text-blue-600">D班</h4>
+              <p class="text-sm text-gray-500 mt-1">静岡大学情報学部</p>
+            </div>
+
+            <div class="p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+              <h4 class="font-semibold text-blue-600">E班</h4>
+              <p class="text-sm text-gray-500 mt-1">静岡大学情報学部、浜松聖星高校</p>
+            </div>
+          </div>
+
+          <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+            <p class="text-center text-gray-700">
+              <span class="font-semibold">総参加者数:</span> 11名（5チーム）
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 審査員 -->
+      <section id="judges" class="content-section section-hidden">
+        <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">審査員一覧</h3>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="p-6 border border-gray-200 rounded-lg">
+              <h4 class="text-lg font-semibold text-gray-900">白井 氏</h4>
+              <p class="text-blue-600 font-medium">静岡大学 情報学部 地域連携室長</p>
+              <p class="text-sm text-gray-600 mt-2">地域課題に取り組む学術連携の専門家として参画</p>
+            </div>
+
+            <div class="p-6 border border-gray-200 rounded-lg">
+              <h4 class="text-lg font-semibold text-gray-900">中野 氏</h4>
+              <p class="text-blue-600 font-medium">かんざんじ温泉観光協会 専務理事</p>
+              <p class="text-sm text-gray-600 mt-2">
+                地域観光の推進に長年取り組む観光業のキーパーソン
+              </p>
+            </div>
+
+            <div class="p-6 border border-gray-200 rounded-lg">
+              <h4 class="text-lg font-semibold text-gray-900">稲葉 氏</h4>
+              <p class="text-blue-600 font-medium">前 浜松市市議会議員</p>
+              <p class="text-sm text-gray-600 mt-2">
+                地域政策に精通し、多様な視点からアイデアを評価
+              </p>
+            </div>
+
+            <div class="p-6 border border-gray-200 rounded-lg">
+              <h4 class="text-lg font-semibold text-gray-900">袴田 氏</h4>
+              <p class="text-blue-600 font-medium">手作り体験工房ルーベラ</p>
+              <p class="text-sm text-gray-600 mt-2">
+                地域に根ざした体験型観光の担い手として審査に参加
+              </p>
+            </div>
+
+            <div class="p-6 border border-gray-200 rounded-lg">
+              <h4 class="text-lg font-semibold text-gray-900">小川 氏</h4>
+              <p class="text-blue-600 font-medium">カスタネクトデザイン事務所</p>
+              <p class="text-sm text-gray-600 mt-2">デザイン視点から地域ブランディングを支援</p>
+            </div>
+
+            <div class="p-6 border border-gray-200 rounded-lg">
+              <h4 class="text-lg font-semibold text-gray-900">宮近 氏</h4>
+              <p class="text-blue-600 font-medium">浜名湖グルメパーク 社長</p>
+              <p class="text-sm text-gray-600 mt-2">地域食文化を発信する事業者として企画を評価</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ギャラリー -->
+      <section id="gallery" class="content-section section-hidden">
+        <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">当日のギャラリー</h3>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="space-y-3">
+              <div class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                <span class="text-gray-500">📸 開会式の様子</span>
+              </div>
+              <p class="text-sm text-gray-600">開会式での挨拶とイベント説明</p>
+            </div>
+
+            <div class="space-y-3">
+              <div class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                <span class="text-gray-500">📸 アイデア検討中</span>
+              </div>
+              <p class="text-sm text-gray-600">各チームでのアイデア出しと議論の様子</p>
+            </div>
+
+            <div class="space-y-3">
+              <div class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                <span class="text-gray-500">📸 発表準備</span>
+              </div>
+              <p class="text-sm text-gray-600">プレゼンテーション資料作成の様子</p>
+            </div>
+
+            <div class="space-y-3">
+              <div class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                <span class="text-gray-500">📸 チーム発表</span>
+              </div>
+              <p class="text-sm text-gray-600">各チームによるアイデア発表</p>
+            </div>
+
+            <div class="space-y-3">
+              <div class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                <span class="text-gray-500">📸 審査中</span>
+              </div>
+              <p class="text-sm text-gray-600">審査員による評価と議論</p>
+            </div>
+
+            <div class="space-y-3">
+              <div class="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+                <span class="text-gray-500">📸 表彰式</span>
+              </div>
+              <p class="text-sm text-gray-600">優秀チームの表彰式</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- メディア掲載 -->
+      <section id="media" class="content-section section-hidden">
+        <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">メディア掲載</h3>
+
+          <div class="space-y-6">
+            <div class="border-l-4 border-blue-500 pl-6">
+              <h4 class="text-lg font-semibold text-gray-900">静岡新聞</h4>
+              <p class="text-blue-600 font-medium mt-1">
+                「舘山寺の新土産　学生がアイデア」
+              </p>
+              <p class="text-sm text-gray-600 mt-2">掲載日：2025年1月26日（日）朝刊(ダミーデータ)</p>
+            </div>
+
+            <div class="border-l-4 border-green-500 pl-6">
+              <h4 class="text-lg font-semibold text-gray-900">中日新聞</h4>
+              <p class="text-blue-600 font-medium mt-1">
+                「舘山寺新名物　アイデア競う」
+              </p>
+              <p class="text-sm text-gray-600 mt-2">掲載日：2025年1月26日（日）地域版(ダミーデータ)</p>
+            </div>
+
+            <div class="border-l-4 border-purple-500 pl-6">
+              <h4 class="text-lg font-semibold text-gray-900">静岡新聞 DIGITALWeb</h4>
+              <p class="text-blue-600 font-medium mt-1">
+                記者コラム 清流「学生、生徒の意気込み」
+              </p>
+              <p class="text-sm text-gray-600 mt-2">掲載日：2025年2月7日</p>
+              <a
+                href="https://news.at-s.com/article/1649965"
+                class="text-blue-500 hover:underline text-sm mt-2 inline-block"
+                >記事を読む →</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 参加者の声 -->
+      <section id="comments" class="content-section section-hidden">
+        <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+          <h3 class="text-2xl font-bold text-gray-900 mb-6">参加者の声</h3>
+
+          <div class="space-y-6">
+            <div class="bg-blue-50 p-6 rounded-lg">
+              <p class="text-gray-700 italic mb-3">
+                "舘山寺のことをイメージでしか認識していなかったが、実際に歩いて考えてみると新たに見えてくるところがあって楽しかった。"
+              </p>
+              <p class="text-sm text-gray-500">- 参加者A</p>
+            </div>
+
+            <div class="bg-green-50 p-6 rounded-lg">
+              <p class="text-gray-700 italic mb-3">
+                "普段は関わることは少ない方と話すことで、自分の価値観など刺激を受けました。PJの皆さん、大変かとは思いますが応援しています。"
+              </p>
+              <p class="text-sm text-gray-500">- 参加者B</p>
+            </div>
+
+            <div class="bg-purple-50 p-6 rounded-lg">
+              <p class="text-gray-700 italic mb-3">
+                "実際に舘山寺を散策したことで、舘山寺の特徴や魅力を知ることができてよかったです。"
+              </p>
+              <p class="text-sm text-gray-500">- 参加者C</p>
+            </div>
+
+            <div class="bg-orange-50 p-6 rounded-lg">
+              <p class="text-gray-700 italic mb-3">
+                "最高でした！多くの大人の方の意見も聞けて、楽しかったです！多くのことを学べました！！！！！！"
+              </p>
+              <p class="text-sm text-gray-500">- 参加者D</p>
+            </div>
+
+            <div class="bg-red-50 p-6 rounded-lg">
+              <p class="text-gray-700 italic mb-3">
+                "自分では思いつかなかったアイディアを書くことで新たな知見を得られました。"
+              </p>
+              <p class="text-sm text-gray-500">- 参加者E</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 商品化決定 -->
+      <section id="news" class="content-section section-hidden">
+        <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+          <div class="text-center mb-8">
+            <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium"
+              >🎉 NEWS</span
+            >
+            <h3 class="text-2xl font-bold text-gray-900 mt-4 mb-2">商品化決定！</h3>
+            <p class="text-gray-600">アイデアソンで提案されたアイデアが実現します</p>
+          </div>
+
+          <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl">
+            <h4 class="text-xl font-bold text-gray-900 mb-4">「かんざんじ五色牛乳」</h4>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <h5 class="font-semibold text-gray-900 mb-3">商品概要</h5>
+                <ul class="space-y-2 text-gray-700">
+                  <li>
+                    • 佐藤牧場の牛乳を使用した5種の味（いちご・牛乳・うなぎいも・お茶・みかん）
+                  </li>
+                  <li>• 舘山寺のお寺の五色をイメージした色展開</li>
+                  <li>• レトロな牛乳瓶と縁結びリボンのパッケージ</li>
+                  <li>• セット売り＆透明バッグ付きで温泉でも使える仕様</li>
+                </ul>
+              </div>
+
+              <div>
+                <h5 class="font-semibold text-gray-900 mb-3">商品化スケジュール</h5>
+                <div class="space-y-3">
+                  <div class="flex items-center">
+                    <div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
+                    <span class="text-gray-700">2024年4月: 商品開発開始</span>
+                  </div>
+                  <div class="flex items-center">
+                    <div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
+                    <span class="text-gray-700">2024年6月: パッケージデザイン完成</span>
+                  </div>
+                  <div class="flex items-center">
+                    <div class="w-4 h-4 bg-blue-500 rounded-full mr-3"></div>
+                    <span class="text-gray-700">2024年8月: 販売開始予定</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 p-6 bg-white rounded-lg">
+              <h5 class="font-semibold text-gray-900 mb-3">提案チーム</h5>
+              <p class="text-gray-700">A班（静岡文化芸術大学・浜松学芸高校）</p>
+              <p class="text-sm text-gray-600 mt-2">
+                最優秀賞を受賞した本アイデアは、実際の商品化にもつながり、若者ならではの自由な発想が活かされています。
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8 text-center">
+            <p class="text-gray-600 mb-4">販売開始は2024年8月を予定しています</p>
+            <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+              <p class="text-yellow-800 text-sm">
+                商品化に関する最新情報は、浜松市観光協会の公式サイトでお知らせいたします
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h3 class="text-lg font-semibold mb-2">新名物アイデアソン in 舘山寺</h3>
+        <p class="text-gray-400 mb-4">
+          主催：静岡大学情報学部 舘山寺の魅力再発見プロジェクト<br />
+          協賛：かんざんじ温泉観光協会
+        </p>
+        <p class="text-sm text-gray-500">
+          © 2025 静岡大学情報学部 舘山寺の魅力再発見プロジェクト. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- 簡易モバイルナビトグル -->
+    <script>
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const navLinks = document.getElementById('nav-links');
+
+      menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
