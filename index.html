@@ -25,8 +25,21 @@
       .hero-bg {
         background: linear-gradient(135deg, #8C2E2B 0%, #A6453F 100%);
       }
+      .hero-bg-harf {
+        background: linear-gradient(
+          135deg,
+          rgba(140, 46, 43, 0.3) 0%,   /* ← #8C2E2B with 80% opacity */
+          rgba(166, 69, 63, 0.3) 50%   /* ← #A6453F with 80% opacity */
+        );
+      }
       .mobile-nav-hidden {
         display: none;
+      }
+      .border-hero-bg {
+        border-color: #8C2E2B;
+      }
+      .text-hero-bg {
+        color: #8C2E2B;
       }
     </style>
   </head>
@@ -103,7 +116,7 @@
         <div class="text-center">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">新名物アイデアソン in 舘山寺</h2>
           <p class="text-lg md:text-xl opacity-90 mb-6">
-            静岡大学情報学部　舘山寺の魅力発見PJ
+            静岡大学情報学部　舘山寺の魅力再発見プロジェクト
           </p>
           <div class="bg-white/20 backdrop-blur-sm rounded-lg inline-block">
             <a
@@ -130,27 +143,27 @@
 
           <div class="grid md:grid-cols-2 gap-8 items-start">
             <div class="space-y-8">
-              <div class="border-l-4 border-blue-500 pl-4">
+              <div class="border-l-4 border-hero-bg pl-4">
                 <h4 class="font-semibold text-gray-900 mb-2">開催日時</h4>
                 <p class="text-gray-600">2025年1月25日（土）10:00〜17:30</p>
               </div>
 
-              <div class="border-l-4 border-green-500 pl-4">
+              <div class="border-l-4 border-hero-bg pl-4">
                 <h4 class="font-semibold text-gray-900 mb-2">開催場所</h4>
                 <p class="text-gray-600">ウェルシーズン浜名湖 2階宴会場</p>
               </div>
 
-              <div class="border-l-4 border-purple-500 pl-4">
+              <div class="border-l-4 border-hero-bg pl-4">
                 <h4 class="font-semibold text-gray-900 mb-2">参加対象</h4>
                 <p class="text-gray-600">高校生・大学生・地域住民・企業関係者</p>
               </div>
 
-              <div class="border-l-4 border-orange-500 pl-4">
+              <div class="border-l-4 border-hero-bg pl-4">
                 <h4 class="font-semibold text-gray-900 mb-2">主催</h4>
                 <p class="text-gray-600">静岡大学情報学部 舘山寺の魅力再発見プロジェクト</p>
               </div>
 
-              <div class="border-l-4 border-red-500 pl-4">
+              <div class="border-l-4 border-hero-bg pl-4">
                 <h4 class="font-semibold text-gray-900 mb-2">テーマ</h4>
                 <p class="text-gray-600">自由な発想で地域資源を活かした斬新な新名物案を創出する</p>
               </div>
@@ -183,8 +196,8 @@
           <div class="space-y-8">
             <!-- A班 -->
             <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-              <div class="bg-blue-50 px-6 py-4 border-b border-gray-200">
-                <h4 class="text-xl font-bold text-blue-600">A班「かんざんじ五色牛乳」</h4>
+              <div class="hero-bg-harf px-6 py-4 border-b border-gray-200">
+                <h4 class="text-xl font-bold text-hero-bg">A班「かんざんじ五色牛乳」</h4>
               </div>
               <div class="p-6 grid md:grid-cols-2 gap-8 items-start">
                 <div class="space-y-4">
@@ -206,15 +219,15 @@
                   </div>
                 </div>
                 <div class="flex justify-center">
-                  <img src="poster.png" alt="イベントポスター" class="rounded-lg shadow-md h-[400px] w-auto mx-auto">
+                  <img src="poster_A.jpg" alt="イベントポスター" class="rounded-lg shadow-md h-[400px] w-auto mx-auto">
                 </div>
               </div>
             </div>
 
             <!-- B班 -->
             <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-              <div class="bg-blue-50 px-6 py-4 border-b border-gray-200">
-                <h4 class="text-xl font-bold text-blue-600">B班「舘山寺ガーベラアクセサリー」</h4>
+              <div class="hero-bg-harf px-6 py-4 border-b border-gray-200">
+                <h4 class="text-xl font-bold text-hero-bg">B班「舘山寺ガーベラアクセサリー」</h4>
               </div>
               <div class="p-6 grid md:grid-cols-2 gap-8 items-start">
                 <div class="space-y-4">
@@ -235,15 +248,15 @@
                   </div>
                 </div>
                 <div class="flex justify-center">
-                  <img src="poster.png" alt="イベントポスター" class="rounded-lg shadow-md h-[400px] w-auto mx-auto">
+                  <img src="poster_B.jpg" alt="イベントポスター" class="rounded-lg shadow-md h-[400px] w-auto mx-auto">
                 </div>
               </div>
             </div>
 
             <!-- C班 -->
             <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-              <div class="bg-blue-50 px-6 py-4 border-b border-gray-200">
-                <h4 class="text-xl font-bold text-blue-600">C班「和んにゃん寺～お揃いでつくる特別な思い出～ 」</h4>
+              <div class="hero-bg-harf px-6 py-4 border-b border-gray-200">
+                <h4 class="text-xl font-bold text-hero-bg">C班「和んにゃん寺～お揃いでつくる特別な思い出～ 」</h4>
               </div>
               <div class="p-6 grid md:grid-cols-2 gap-8 items-start">
                 <div class="space-y-4">
@@ -265,15 +278,15 @@
                   </div>
                 </div>
                 <div class="flex justify-center">
-                  <img src="poster.png" alt="イベントポスター" class="rounded-lg shadow-md h-[400px] w-auto mx-auto">
+                  <img src="poster_C.jpg" alt="イベントポスター" class="rounded-lg shadow-md h-[400px] w-auto mx-auto">
                 </div>
               </div>
             </div>
 
             <!-- D班 -->
             <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-              <div class="bg-blue-50 px-6 py-4 border-b border-gray-200">
-                <h4 class="text-xl font-bold text-blue-600">D班「舘山寺TCG」</h4>
+              <div class="hero-bg-harf px-6 py-4 border-b border-gray-200">
+                <h4 class="text-xl font-bold text-hero-bg">D班「舘山寺TCG」</h4>
               </div>
               <div class="p-6 grid md:grid-cols-2 gap-8 items-start">
                 <div class="space-y-4">
@@ -294,15 +307,15 @@
                   </div>
                 </div>
                 <div class="flex justify-center">
-                  <img src="poster.png" alt="イベントポスター" class="rounded-lg shadow-md h-[400px] w-auto mx-auto">
+                  <img src="poster_D.jpg" alt="イベントポスター" class="rounded-lg shadow-md h-[400px] w-auto mx-auto">
                 </div>
               </div>
             </div>
 
             <!-- E班 -->
             <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-              <div class="bg-blue-50 px-6 py-4 border-b border-gray-200">
-                <h4 class="text-xl font-bold text-blue-600">E班「パン山寺」</h4>
+              <div class="hero-bg-harf px-6 py-4 border-b border-gray-200">
+                <h4 class="text-xl font-bold text-hero-bg">E班「パン山寺」</h4>
               </div>
               <div class="p-6 grid md:grid-cols-2 gap-8 items-start">
                 <div class="space-y-4">
@@ -323,7 +336,7 @@
                   </div>
                 </div>
                 <div class="flex justify-center">
-                  <img src="poster.png" alt="イベントポスター" class="rounded-lg shadow-md h-[400px] w-auto mx-auto">
+                  <img src="poster_E.jpg" alt="イベントポスター" class="rounded-lg shadow-md h-[400px] w-auto mx-auto">
                 </div>
               </div>
             </div>
@@ -339,32 +352,32 @@
           <div class="grid md:grid-cols-2 gap-6">
             <div class="p-6 border border-gray-200 rounded-lg">
               <h4 class="text-lg font-semibold text-gray-900">白井靖人 氏</h4>
-              <p class="text-blue-600 font-medium">静岡大学 情報学部 地域連携室長</p>
+              <p class="text-hero-bg font-medium">静岡大学 情報学部 地域連携室長</p>
             </div>
 
             <div class="p-6 border border-gray-200 rounded-lg">
               <h4 class="text-lg font-semibold text-gray-900">中野雅晴 氏</h4>
-              <p class="text-blue-600 font-medium">かんざんじ温泉観光協会 専務理事</p>
+              <p class="text-hero-bg font-medium">かんざんじ温泉観光協会 専務理事</p>
             </div>
 
             <div class="p-6 border border-gray-200 rounded-lg">
               <h4 class="text-lg font-semibold text-gray-900">稲葉大輔 氏</h4>
-              <p class="text-blue-600 font-medium">浜名湖かんざんじ温泉観光協会 顧問</p>
+              <p class="text-hero-bg font-medium">浜名湖かんざんじ温泉観光協会 顧問</p>
             </div>
 
             <div class="p-6 border border-gray-200 rounded-lg">
               <h4 class="text-lg font-semibold text-gray-900">袴田久美子 氏</h4>
-              <p class="text-blue-600 font-medium">手作り体験工房ルーベラ</p>
+              <p class="text-hero-bg font-medium">手作り体験工房ルーベラ</p>
             </div> 
 
             <div class="p-6 border border-gray-200 rounded-lg">
               <h4 class="text-lg font-semibold text-gray-900">小川悠都 氏</h4>
-              <p class="text-blue-600 font-medium">カスタネクトデザイン事務所</p>
+              <p class="text-hero-bg font-medium">カスタネクトデザイン事務所</p>
             </div>
 
             <div class="p-6 border border-gray-200 rounded-lg">
               <h4 class="text-lg font-semibold text-gray-900">宮近志人 氏</h4>
-              <p class="text-blue-600 font-medium">浜名湖グルメパーク</p>
+              <p class="text-hero-bg font-medium">浜名湖グルメパーク</p>
             </div>
           </div>
         </div>
@@ -427,7 +440,7 @@
           <h3 class="text-2xl font-bold text-gray-900 mb-6">メディア掲載</h3>
 
           <div class="space-y-6">
-            <!-- 中日新聞 (新しい記事) -->
+          <!--
             <div class="border-l-4 border-yellow-500 pl-6">
               <h4 class="text-lg font-semibold text-gray-900">中日新聞（ビジネス版）</h4>
               <p class="text-blue-600 font-medium mt-1">
@@ -440,7 +453,6 @@
               >記事を読む →</a>
             </div>
 
-            <!-- Yahoo!ニュース -->
             <div class="border-l-4 border-pink-500 pl-6">
               <h4 class="text-lg font-semibold text-gray-900">Yahoo!ニュース</h4>
               <p class="text-blue-600 font-medium mt-1">
@@ -453,7 +465,6 @@
               >記事を読む →</a>
             </div>
 
-            <!-- 浜名湖かんざんじ温泉観光協会 -->
             <div class="border-l-4 border-cyan-500 pl-6">
               <h4 class="text-lg font-semibold text-gray-900">浜名湖かんざんじ温泉観光協会</h4>
               <p class="text-blue-600 font-medium mt-1">
@@ -466,7 +477,6 @@
               >記事を読む →</a>
             </div>
 
-            <!-- 浜名湖パルパル -->
             <div class="border-l-4 border-rose-500 pl-6">
               <h4 class="text-lg font-semibold text-gray-900">浜名湖パルパル</h4>
               <p class="text-blue-600 font-medium mt-1">
@@ -478,7 +488,6 @@
               >記事を読む →</a>
             </div>
 
-            <!-- ウェルシーズン浜名湖 -->
             <div class="border-l-4 border-indigo-500 pl-6">
               <h4 class="text-lg font-semibold text-gray-900">ウェルシーズン浜名湖</h4>
               <p class="text-blue-600 font-medium mt-1">
@@ -491,7 +500,6 @@
               >記事を読む →</a>
             </div>
 
-            <!-- 静岡新聞（新しい記事） -->
             <div class="border-l-4 border-gray-500 pl-6">
               <h4 class="text-lg font-semibold text-gray-900">静岡新聞（続報）</h4>
               <p class="text-blue-600 font-medium mt-1">
@@ -503,39 +511,38 @@
                 class="text-blue-500 hover:underline text-sm mt-2 inline-block"
               >記事を読む →</a>
             </div>
+            -->
 
-            <!-- --- 既存記事 --- -->
-
-            <div class="border-l-4 border-blue-500 pl-6">
+            <div class="border-l-4 border-hero-bg pl-6">
               <h4 class="text-lg font-semibold text-gray-900">静岡新聞</h4>
-              <p class="text-blue-600 font-medium mt-1">
+              <p class="text-hero-bg font-medium mt-1">
                 「牛乳瓶入り飲料や地元の地形型パン…　舘山寺の新土産、静大生がアイデア　地域活性化の契機に」
               </p>
-              <p class="text-sm text-gray-600 mt-2">掲載日：2025年2月6日（日）朝刊(ダミーデータ)</p>
+              <p class="text-sm text-gray-600 mt-2">掲載日：2025年1月31日（金）</p>
               <a
                 href="https://news.at-s.com/article/1649181"
                 class="text-blue-500 hover:underline text-sm mt-2 inline-block"
               >記事を読む →</a>
             </div>
 
-            <div class="border-l-4 border-green-500 pl-6">
+            <div class="border-l-4 border-hero-bg pl-6">
               <h4 class="text-lg font-semibold text-gray-900">中日新聞</h4>
-              <p class="text-blue-600 font-medium mt-1">
+              <p class="text-hero-bg font-medium mt-1">
                 「舘山寺新名物のアイデア競う　大学生や高校生、５チーム発表」
               </p>
-              <p class="text-sm text-gray-600 mt-2">掲載日：2025年1月31日（日）地域版(ダミーデータ)</p>
+              <p class="text-sm text-gray-600 mt-2">掲載日：2025年1月31日（金）</p>
               <a
                 href="https://www.chunichi.co.jp/article/1019050?rct=h_shizuoka"
                 class="text-blue-500 hover:underline text-sm mt-2 inline-block"
               >記事を読む →</a>
             </div>
 
-            <div class="border-l-4 border-purple-500 pl-6">
+            <div class="border-l-4 border-hero-bg pl-6">
               <h4 class="text-lg font-semibold text-gray-900">静岡新聞 DIGITALWeb</h4>
-              <p class="text-blue-600 font-medium mt-1">
+              <p class="text-hero-bg font-medium mt-1">
                 記者コラム 清流「学生、生徒の意気込み」
               </p>
-              <p class="text-sm text-gray-600 mt-2">掲載日：2025年2月7日</p>
+              <p class="text-sm text-gray-600 mt-2">掲載日：2025年2月7日（金）</p>
               <a
                 href="https://news.at-s.com/article/1649965"
                 class="text-blue-500 hover:underline text-sm mt-2 inline-block"
@@ -563,7 +570,7 @@
             <!-- 吹き出し：右 -->
             <div class="flex items-start justify-end">
               <div class="bg-green-100 text-gray-800 p-4 rounded-xl relative max-w-2xl">
-                <p class="italic mb-2">"普段は関わることは少ない方と話すことで、自分の価値観など刺激を受けました。PJの皆さん、大変かとは思いますが応援しています。"</p>
+                <p class="italic mb-2">"普段は関わることは少ない方と話すことで、自分の価値観など刺激を受けました。<br />PJの皆さん、大変かとは思いますが応援しています。"</p>
                 <p class="text-sm text-gray-500 text-right">- 参加者B</p>
                 <div class="absolute -right-2 top-3 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-green-100"></div>
               </div>
@@ -581,7 +588,7 @@
             <!-- 吹き出し：右 -->
             <div class="flex items-start justify-end">
               <div class="bg-green-100 text-gray-800 p-4 rounded-xl relative max-w-2xl">
-                <p class="italic mb-2">"最高でした！多くの大人の方の意見も聞けて、楽しかったです！多くのことを学べました！！！！！！"</p>
+                <p class="italic mb-2">"最高でした！多くの大人の方の意見も聞けて、楽しかったです！<br />多くのことを学べました！！！！！！"</p>
                 <p class="text-sm text-gray-500 text-right">- 参加者D</p>
                 <div class="absolute -right-2 top-3 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-green-100"></div>
               </div>
