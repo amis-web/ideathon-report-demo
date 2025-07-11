@@ -10,7 +10,13 @@
         scroll-behavior: smooth;
       }
       .fade-in {
-        animation: fadeIn 0.5s ease-in;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+      }
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
       }
       @keyframes fadeIn {
         from {
@@ -189,13 +195,13 @@
       </section>
 
       <!-- 参加者 -->
-      <section id="participants" class="content-section section-hidden">
+      <section id="participants" class="content-section fade-in">
         <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
           <h3 class="text-2xl font-bold text-gray-900 mb-6">参加者とアイデア</h3>
 
           <div class="space-y-8">
             <!-- A班 -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md fade-in">
               <div class="hero-bg px-6 py-4 border-b border-gray-200">
                 <h4 class="text-xl font-bold text-white">A班「かんざんじ五色牛乳」</h4>
               </div>
@@ -225,7 +231,7 @@
             </div>
 
             <!-- B班 -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md fade-in">
               <div class="hero-bg px-6 py-4 border-b border-gray-200">
                 <h4 class="text-xl font-bold text-white">B班「舘山寺ガーベラアクセサリー」</h4>
               </div>
@@ -254,7 +260,7 @@
             </div>
 
             <!-- C班 -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md fade-in">
               <div class="hero-bg px-6 py-4 border-b border-gray-200">
                 <h4 class="text-xl font-bold text-white">C班「和んにゃん寺～お揃いでつくる特別な思い出～ 」</h4>
               </div>
@@ -284,7 +290,7 @@
             </div>
 
             <!-- D班 -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md fade-in">
               <div class="hero-bg px-6 py-4 border-b border-gray-200">
                 <h4 class="text-xl font-bold text-white">D班「舘山寺TCG」</h4>
               </div>
@@ -313,7 +319,7 @@
             </div>
 
             <!-- E班 -->
-            <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md fade-in">
               <div class="hero-bg px-6 py-4 border-b border-gray-200">
                 <h4 class="text-xl font-bold text-white">E班「パン山寺」</h4>
               </div>
@@ -345,7 +351,7 @@
       </section>
 
       <!-- 審査員 -->
-      <section id="judges" class="content-section section-hidden">
+      <section id="judges" class="content-section fade-in">
         <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
           <h3 class="text-2xl font-bold text-gray-900 mb-6">審査員一覧</h3>
 
@@ -384,7 +390,7 @@
       </section>
 
       <!-- ギャラリー -->
-      <section id="gallery" class="content-section section-hidden">
+      <section id="gallery" class="content-section fade-in">
         <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
           <h3 class="text-2xl font-bold text-gray-900 mb-6">当日のギャラリー</h3>
 
@@ -435,7 +441,7 @@
       </section>
 
       <!-- メディア掲載 -->
-      <section id="media" class="content-section section-hidden">
+      <section id="media" class="content-section fade-in">
         <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
           <h3 class="text-2xl font-bold text-gray-900 mb-6">メディア掲載</h3>
 
@@ -553,13 +559,13 @@
       </section>
 
       <!-- 参加者の声 -->
-      <section id="comments" class="content-section section-hidden">
+      <section id="comments" class="content-section fade-in">
         <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
           <h3 class="text-2xl font-bold text-gray-900 mb-6">参加者の声</h3>
 
           <div class="space-y-6">
             <!-- 吹き出し：左 -->
-            <div class="flex items-start">
+            <div class="flex items-start fade-in">
               <div class="bg-gray-100 text-gray-800 p-4 rounded-xl relative max-w-2xl">
                 <p class="mb-2">"舘山寺のことをイメージでしか認識していなかったが、実際に歩いて考えてみると新たに見えてくるところがあって楽しかった。"</p>
                 <p class="text-sm text-gray-500 text-right">- 参加者A</p>
@@ -568,7 +574,7 @@
             </div>
 
             <!-- 吹き出し：右 -->
-            <div class="flex items-start justify-end">
+            <div class="flex items-start justify-end fade-in">
               <div class="bg-green-100 text-gray-800 p-4 rounded-xl relative max-w-2xl">
                 <p class="mb-2">"普段は関わることは少ない方と話すことで、自分の価値観など刺激を受けました。<br />PJの皆さん、大変かとは思いますが応援しています。"</p>
                 <p class="text-sm text-gray-500 text-right">- 参加者B</p>
@@ -577,7 +583,7 @@
             </div>
 
             <!-- 吹き出し：左 -->
-            <div class="flex items-start">
+            <div class="flex items-start fade-in">
               <div class="bg-gray-100 text-gray-800 p-4 rounded-xl relative max-w-2xl">
                 <p class="mb-2">"実際に舘山寺を散策したことで、舘山寺の特徴や魅力を知ることができてよかったです。"</p>
                 <p class="text-sm text-gray-500 text-right">- 参加者C</p>
@@ -586,7 +592,7 @@
             </div>
 
             <!-- 吹き出し：右 -->
-            <div class="flex items-start justify-end">
+            <div class="flex items-start justify-end fade-in">
               <div class="bg-green-100 text-gray-800 p-4 rounded-xl relative max-w-2xl">
                 <p class="mb-2">"最高でした！多くの大人の方の意見も聞けて、楽しかったです！<br />多くのことを学べました！！！！！！"</p>
                 <p class="text-sm text-gray-500 text-right">- 参加者D</p>
@@ -595,7 +601,7 @@
             </div>
 
             <!-- 吹き出し：左 -->
-            <div class="flex items-start">
+            <div class="flex items-start fade-in">
               <div class="bg-gray-100 text-gray-800 p-4 rounded-xl relative max-w-2xl">
                 <p class="mb-2">"自分では思いつかなかったアイディアを書くことで新たな知見を得られました。"</p>
                 <p class="text-sm text-gray-500 text-right">- 参加者E</p>
@@ -607,7 +613,7 @@
       </section>
 
       <!-- 商品化決定 -->
-      <section id="news" class="content-section section-hidden">
+      <section id="news" class="content-section">
         <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
           <div class="text-center mb-8">
             <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium"
@@ -688,13 +694,30 @@
       </div>
     </footer>
 
-    <!-- 簡易モバイルナビトグル -->
     <script>
       const menuBtn = document.getElementById('mobile-menu-btn');
       const navLinks = document.getElementById('nav-links');
 
       menuBtn.addEventListener('click', () => {
         navLinks.classList.toggle('hidden');
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const fadeInElements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            } else {
+              entry.target.classList.remove('visible');
+            }
+          });
+        }, {
+          threshold: 0.1
+        });
+
+        fadeInElements.forEach(el => observer.observe(el));
       });
     </script>
   </body>
